@@ -103,7 +103,15 @@ window.addEventListener("scroll",function(){
     nav.classList.toggle("sticky",window.scrollY > 50)
 })
 
+// ------ Toggle Navbar -----------//
 
+let menuIcon =document.querySelector("#menu-icon")
+let navlist =document.querySelector(".navlist");
+
+menuIcon.onclick = ()=>{
+    menuIcon.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
+}
 
 /// scroll animation-------/////
 

@@ -114,7 +114,16 @@ nav.sticky{
  }
 
  
-
+#menu-icon{
+   font-size: 1.8rem;
+   z-index: 1001;
+   cursor: pointer;
+   margin-left: 25px;
+   background: var(--hover-color);
+   border-radius: 3px;
+   color: var(--secon-bg-color);
+   display: none;
+}
 
 
 
@@ -369,8 +378,9 @@ nav.sticky{
  }
 
  .img-about img {
-   max-width: 450px;
+   max-width: 400px;
    height: 350px;
+   padding-bottom: 20px;
    border-radius: 50%;
    border: 5px solid #3498db;
    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 
@@ -830,4 +840,55 @@ footer p{
 .show-items{
    opacity: 1;
    transform: translateX(0);
+}
+
+/* -------   Breakpoint  ---- */
+
+@media(max-width:991px){
+   header,
+   header.sticky{
+      padding: 15px 5%;
+   }
+   footer{
+      padding: 15px 5%;
+   }
+   section{
+      padding: 50px 5%;
+   }
+   .navlist a{
+      padding: 8px 15px;
+   }
+}
+
+
+
+@media(max-width:768px){
+   #menu-icon{
+      display: block;
+      transition: all .4s ease;
+   }
+   #menu-icon.bx-x{
+      transform: rotate(-180deg);
+   }
+   .navlist{
+      display: flex;
+      position: absolute;
+      top: -1000px;
+      right:0;
+      left: 0;
+      flex-direction: column;
+      background: var(--bg-color);
+      text-align: left;
+      padding: 0.5%;
+      transform: all .45s ease;
+   }
+   .navlist a{
+      display: block;
+      padding-bottom: 1rem;
+      font-size: 1rem;
+   }
+   .navlist.open{
+      top: 100%;
+   }
+
 }
