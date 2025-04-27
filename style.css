@@ -375,19 +375,19 @@ nav.sticky{
  .about .img-about{
     text-align: center;
     position: relative;
+    
  }
 
  .img-about img {
-   max-width: 400px;
-   height: 350px;
-   padding-bottom: 20px;
+   max-width: 450px;
+   height: 450px;
+   object-fit: cover;
+   padding-bottom: 50px;
    border-radius: 50%;
-   border: 5px solid #3498db;
+   border: 5px solid var(--hover-color);
    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 
                0 0 50px rgba(52, 152, 219, 0.6); 
-   background-color: #12f7ff;
-
-   transition: transform 0.4s ease, box-shadow 0.4s ease;
+   background: linear-gradient(var(--bg-color), var(--hover-color));
 }
 
  .about-content span{
@@ -586,7 +586,7 @@ nav.sticky{
 
 .box{
    position: relative;
-   margin: 10px 0;
+   margin: 30px 0;
    flex: 1 1 15rem;
 }
 
@@ -773,6 +773,7 @@ nav.sticky{
    padding: .7rem;
    outline: none;
 }
+
 
 
 .contact form textarea{
