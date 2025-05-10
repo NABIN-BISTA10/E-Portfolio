@@ -80,7 +80,7 @@ circles.forEach(elem=>{
 // ------Active Navbar -----------//
 
 
-let menuli = document.querySelectorAll('nav ul li a');
+let menuli = document.querySelectorAll('header ul li a');
 let section = document.querySelectorAll('section');
 
 function activeMenu(){
@@ -98,9 +98,9 @@ window.addEventListener("scroll", activeMenu);
 // ------ Sticky Navbar -----------//
 
 
-const nav = document.querySelector("nav");
+const header = document.querySelector("header");
 window.addEventListener("scroll",function(){
-    nav.classList.toggle("sticky",window.scrollY > 50)
+    header.classList.toggle("sticky",window.scrollY > 50)
 })
 
 // ------ Toggle Navbar -----------//
