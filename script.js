@@ -145,6 +145,6 @@ scrollTop.forEach((el)=>observer.observe(el));
 
 
 
-// ----------Email Responsiveness -------//
+
 
    
